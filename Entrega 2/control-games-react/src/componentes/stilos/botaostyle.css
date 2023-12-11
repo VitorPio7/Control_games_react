@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Salsa&display=swap');
+
+:root{
+    --cor0: #020416;
+    --cor1: #010a26;
+    --cor2: #0d9fff;
+    --cor3: #00484f;
+    --cor4: #1c004f;
+    --cor5: #ffffff;
+
+    --fonte-padrao: 'Poppins';
+    --fonte-destacamento: Tahoma ,sans-serif;
+    --fonte-titulo: 'Salsa';
+    --fonte-titulo2: Arial, Helvetica, sans-serif;
+}
+
+/*Botão jogar agora----------------------------------------------------------------------------------------------------------------------*/
+
+#botao-jogar{
+    width: 180px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid black;
+    font-family: var(--fonte-padrao);
+    background-image: linear-gradient(to right ,#FF7A00 4.24% , #FFB800 79.05% , #FF7A00 100%);
+    transition: 0.8s;
+}
+
+
+#botao-jogar:hover{
+    transform: scale(1.2);
+}
+
+/*Botão cadastrar jogo----------------------------------------------------------------------------------------------------------------------*/
+
+#botao-cadastrar-jogo{
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid black;
+    font-family: var(--fonte-padrao);
+    background-image: linear-gradient(to right ,#FF7A00 4.24% , #FFB800 79.05% , #FF7A00 100%);
+    transition: 0.8s;
+}
+
+#botao-cadastrar-jogo:hover{
+    transform: scale(1.2);
+}
+
+/*Botão iditar jogo----------------------------------------------------------------------------------------------------------------------*/
+
+#botao-editar-jogo{
+    width: 130px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid black;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-decoration: none;
+    background-image: linear-gradient(to right ,#44a3e3 4.24% , #4471E3 79.05% , #4944E3 100%);
+    transition: 0.8s;
+}
+
+#botao-editar-jogo:hover{
+    transform: scale(1.2);
+}
+
+/*Botão Remover jogo----------------------------------------------------------------------------------------------------------------------*/
+
+#botao-remover-jogo{
+    width: 130px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid black;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-decoration: none;
+    background-image: linear-gradient(to right ,#E61717 4.24% , #B33636 79.05% , #804040 100%);
+    transition: 0.8s;
+}
+
+#botao-remover-jogo:hover{
+    transform: scale(1.2);
+}
+
+/*Botão adicionar plataforma----------------------------------------------------------------------------------------------------------------------*/
+
+#botao_adicionar_plataforma{
+    align-items: center;
+    width: 190px;
+    height: 60px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid black;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-decoration: none;
+    background-image: linear-gradient(to right ,#44a3e3 4.24% , #4471E3 79.05% , #4944E3 100%);
+    transition: 0.8s;
+}
+
+#botao_adicionar_plataforma:hover{
+    transform: scale(1.2);
+}
+
+/*Botão Remover plataforma----------------------------------------------------------------------------------------------------------------------*/
+
+#botao_remover_plataforma{
+    align-items: center;
+    width: 190px;
+    height: 60px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid black;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-decoration: none;
+    background-image: linear-gradient(to right ,#E61717 4.24% , #B33636 79.05% , #804040 100%);
+    transition: 0.8s;
+}
+
+#botao_remover_plataforma:hover{
+    transform: scale(1.2);
+}
+
+@media(max-width: 900px){
+
+    #botao_adicionar_plataforma,#botao_remover_plataforma{
+    width: 120px;
+    height: 90px;
+    font-size: 14px;
+    }
+
+}

@@ -1,0 +1,48 @@
+:root {
+    --cor0: #020416;
+    --cor1: #010A26;
+    --cor2: #0d9fff;
+    --cor3: #00484f;
+    --cor4: #1c004f;
+    --cor5: #ffffff;
+}
+
+#bodylogin{
+    width: 100%;
+    /* height: 100vh; */
+    background-color: var(--cor1);
+    background-image: url('../../imagens/fundos/Rectangle\ 2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#mainlogin{
+    /* height: 100vh; */
+
+}
+
+#formlogin {
+    padding-top: 80px;
+    padding-bottom: 100px; 
+}
+
+#footer01login {
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media(max-width: 900px){
+    #bodylogin {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+    #footer01login{
+        position: relative;
+    }
+
+
+}
