@@ -1,0 +1,466 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Salsa&display=swap');
+
+:root{
+    --cor0: #020416;
+    --cor1: #010A26;
+    --cor2: #0d9fff;
+    --cor3: #00484f;
+    --cor4: #1c004f;
+    --cor5: #ffffff;
+
+    --fonte-padrao: 'Poppins';
+    --fonte-destacamento: Tahoma ,sans-serif;
+    --fonte-titulo: 'Salsa';
+    --fonte-titulo2: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+/*Header-------------------------------------------------------------------------------*/
+
+header{
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
+    min-height: 100px;
+    padding-bottom: 10px;
+    background-color: var(--cor0);
+    
+}
+
+#logotipo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--fonte-titulo);
+    font-size: 1.6vw;
+    font-weight: 400;
+}
+
+#logotipo a{
+    text-decoration: none;
+    color: white;
+}
+
+#menu{
+    padding-left: 2vw;
+    font-family: var(--fonte-titulo2);
+    font-size: 1.5vw;
+}
+
+#menu nav  a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: white;
+    font-weight: 400;
+    padding: 5px 5px 5px 5px;
+    transition-duration: 0.8s;
+    
+    
+}
+
+#menu nav a:hover{
+    background-color: var(--cor2);
+    border-radius: 10px;
+}
+
+#pesquisa{
+    margin-left: 2vw;
+    padding: 10px;
+}
+
+
+#login{
+    display: block;
+    position: absolute;
+    right: 0;
+    color: white;
+    padding: 45px 25px 25px 25px;
+}
+
+#img_usuario{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+#usuario_font, #usuario_font2{
+        display: flex;
+        justify-content: center;
+        font-family: var(--fonte-padrao);
+}
+
+#usuario_font{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+/*Barra de pesquisar-------------------------------------------------------------------------------*/
+
+#pesquisa{
+    background-color: white;
+    height: 30px;
+    border-radius: 50px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#busca-text{
+    background: none; /*AQUI FAÇO A RETIRADA DAS CONFIGURÇÃOES PADRÃO DO BOX INPUT*/
+    border: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 1em;
+    width: 0;
+    transition: 0.5s;
+}
+
+#botao-pesquisar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#pesquisa:hover > #busca-text{
+    width: 180px;
+}
+
+#pesquisa:hover > #botao-pesquisar{
+    background-color: #447ce7;         /*Aqui eu falo que quando o mouse passar o mouse em cima da barra de pesquisa o background vai ficar igual a cor da lupa , preparando o terreno para alupa branca */
+}
+
+#pesquisa:hover > #botao-pesquisar #lupa-azul{
+    display: none;                         /*Aqui eu desligo a lupa azul quando o hover acontece preparanod o terreno para lupa branca*/
+}
+
+#pesquisa:hover > #botao-pesquisar #lupa-branca{
+    display: block;                        /*Agora a lupa branca pode aparecer pois o background está feito e a lupa azul foi "desligada"*/
+}
+
+#lupa-branca{
+    display: none;
+}
+/*Termino da barra de pesquisa---------------------------------------------------------------------------------------------------------------------*/
+
+/*Main----------------------------------------------------------------------------------------------------------------------------*/
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: var(--cor1);
+    padding: 20px;
+    text-align: center;
+}
+
+/*divisão das Secções----------------------------------------------------------------------------------------------------------------------------*/
+
+.divisao{
+    display: flex;
+    align-items: center;
+    margin: 35px 0;
+
+    font-family: var(--fonte-titulo2);
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.divisao p{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.linha{
+    flex: 1;
+    border-top: 1px solid white;
+    height: 0;
+    margin: 0 5px;
+    
+    
+}
+
+/*secção artigo----------------------------------------------------------------------------------------------------------------------*/
+#foto_box{
+    width: 500px;
+    margin: auto;
+}
+
+.info{
+    display: flex;
+    padding: 50px 0px 50px 0px;
+}
+
+
+.info aside{
+    width: 45vw;
+    height: 300px;
+    color:  white;
+    font-family: var(--fonte-padrao);
+    font-weight: 600;
+    text-align: justify;
+}
+
+.info aside h2{
+    font-family: var(--fonte-titulo2);
+    text-align: center;
+}
+
+#img_game{
+    border-radius: 20px;
+    width: 500px;
+    height: 250px;
+}
+
+#descricaoid{
+    width: 535px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+ul{
+    list-style-type: none;
+    width: 39vw;
+}
+
+li{
+    text-align: left;
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-weight: 600;
+}
+
+
+
+ul li p{
+    display: inline;
+}
+
+/*Botões----------------------------------------------------------------------------------------------------------------------*/
+
+#botoes{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#botoes a{
+    align-items: center;
+    width: 130px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid black;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-decoration: none;
+    background-image: linear-gradient(to right ,#44a3e3 4.24% , #4471E3 79.05% , #4944E3 100%);
+    transition: 0.8s;
+}
+
+#botoes #botao_remover{
+    background-image: linear-gradient(to right ,#E61717 4.24% , #B33636 79.05% , #804040 100%); 
+}
+
+#botoes a:hover{
+    transform: scale(1.2);
+}
+
+/*Footer----------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+    background-color: var(--cor0);
+    width: 100%;
+    height: 13vh;
+    
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo a{
+    color: white;
+    font-family: var(--fonte-titulo);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.links a{
+    display: flex;
+    align-items: center;
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 10px ;
+    margin-right: 20px;
+    transition-duration: 0.8s;
+}
+
+.links a:hover{
+    transform: scale(1.2);
+}
+
+/*Media queries ----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media(max-width: 900px){
+    /* Seção Não Recomendados para dispositivos menores que 600px */
+
+    /*Configurações globais fonte -----------------*/
+    main section ul , aside{
+        font-size: 14px;
+    }
+    .links a{
+        font-size: 0em;
+    } 
+    #logotipo a{
+        font-size: 0em;
+    }
+
+
+    /*Menu----------------------------------------------------------------*/
+
+    /*Logotipo---------------*/
+    #logotipo {
+        font-size: 1.2em;
+    }
+    
+    #logotipo img{
+        width: 90px;
+    }
+
+    /*Menu Navegação-----------------------------*/
+
+    #menu{
+        font-size: 1em;
+        margin: auto;
+    }
+
+    #menu nav a {
+        font-size: 1em;
+        padding: 5px;
+        
+    }
+
+    /*Parte de login do usuario-------------------*/
+    #login {
+        padding: 20px;
+    }
+    
+    #img_usuario {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #usuario_font {
+        font-size: 0em;
+    }
+    
+    #usuario_font2 {
+        font-size: 0em;
+    }
+
+
+    /*Barra pesquisa--------------------------------------*/
+    #pesquisa {
+        visibility: hidden;
+    }
+    
+    #busca-text {
+        visibility: hidden;
+    }
+    
+    #botao-pesquisar {
+        visibility: hidden;
+    }
+    
+    /*conteudo article ---------------------------------------*/
+
+    .info{
+        display: block;
+    }
+
+    .info ul{
+        margin: auto;
+        margin-left: 10vw;
+        padding-bottom: 50px;
+    }
+
+    .info ul li{
+        width: 200px;
+    }
+
+    .info aside{
+        margin: auto;
+    }
+    
+
+    /* foto-----------------------------------------------------*/
+
+    #foto_box{
+        width: 250px;
+        height: 200px;
+    }
+
+    #img_game{
+        border-radius: 20px;
+        width: 250px;
+        height: 150px;
+    }
+    
+
+    /*conteudo descrição---------------------------------------*/
+
+    #box_descricao{
+        width: 250px;
+    }
+
+    #descricaoid{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        word-wrap: break-word;
+    }
+    
+    /* footer-----------------------------------------------------*/
+    footer{
+        position: absolute;
+        bottom: auto;
+        height: auto;
+    }
+    
+}

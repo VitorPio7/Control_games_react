@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Games</title>
+    <link rel="stylesheet" href="Stilos/style.css">
+</head>
+
+<body>
+
+    <header>
+        <section id="logotipo">
+            <a href="index.html"><img src="imagens/Logotipo/logotipo header.png" alt="logotipo"></a>
+            <a href="index.html">Control_Games</a>
+        </section>
+
+        <section id="menu">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="biblioteca.html">Biblioteca</a>
+                <a href="plataformas.html">Plataformas</a>
+            </nav>
+        </section>
+
+        <section id="pesquisa">
+            <input type="text" id="busca-text" placeholder="Pesquisar...">
+            <a id="botao-pesquisar">
+                <img id="lupa-azul" src="imagens/botoes/loupe-blue.svg" alt="" width="25px" height="25px">
+                <img id="lupa-branca" src="imagens/botoes/loupe-white.svg" alt="" width="25px" height="25px">
+                <!--Configurei o tamnho da lupa-->
+            </a>
+
+        </section>
+
+        <section id="login">
+            <img id="img_usuario" src="imagens/avatar/WhatsApp Image 2023-11-02 at 18.29.34 (2).jpeg" alt="usuario">
+            <p id="usuario_font">Adailton Cerqueira</p>
+            <p id="usuario_font2">Mestre<img id="img_classe" src="imagens/avatar/Medal First Place.png" alt=""></p>
+            
+        </section>
+    </header>
+
+    <main>
+
+        <section id="ultimo_jogo">
+            <div class="divisao">
+                <div class="linha"></div>
+                <p>Ultimo Jogo</p>
+                <div class="linha"></div>
+            </div>
+
+            <a href="game.html" id="HOGW" onclick="abrirgame('HOGW')"><img src="imagens/Jogos img maior/hogwarts.jpeg" alt="Ultimo a ser jogado"></a>
+            
+            <div id="botao-jogar">
+                <a href="#">Jogar Agora</a>
+            </div>
+        </section>
+
+        <section id="mais">
+            <div class="divisao">
+                <div class="linha"></div>
+                <p>Mais Jogados no Momento</p>
+                <div class="linha"></div>
+            </div>
+
+            <div class="Imagem_mais_jogados">
+                <div class="Mais_jogados">
+                    <a class="link_img_jogo" href="game.html"  onclick="abrirgame('DIABLO4')"><img src="imagens/Jogos img menor/diablo 4.jpg" alt=""></a>
+                    <a class="link_jogo" href="game.html"  onclick="abrirgame('DIABLO4')">Diablo IV</a>
+                </div>
+
+                <div class="Mais_jogados">
+                    <a class="link_img_jogo" href="game.html"  onclick="abrirgame('RDR2')"><img src="imagens/Jogos img menor/red dead redemption.jpg" alt=""></a>
+                    <a class="link_jogo" href="game.html"  onclick="abrirgame('RDR2')">Red Dead Redemption 2</a>
+                </div>
+
+                <div class="Mais_jogados">
+                    <a class="link_img_jogo" href="game.html"  onclick="abrirgame('SDIF')"><img src="imagens/Jogos img menor/six day in fallujah.jpg" alt=""></a>
+                    <a class="link_jogo" href="game.html"  onclick="abrirgame('SDIF')">Sixy Day In Fallujah</a>
+                </div>
+
+                <div class="Mais_jogados">
+                    <a class="link_img_jogo" href="game.html"  onclick="abrirgame('WART')"><img src="imagens/Jogos img menor/war thunder.jpg" alt=""></a>
+                    <a class="link_jogo" href="game.html"  onclick="abrirgame('WART')">War Thunder</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="agora">
+            <div class="divisao">
+                <div class="linha"></div>
+                <p>Jogando Agora</p>
+                <div class="linha"></div>
+            </div>
+
+            <div class="Imagens_jogando_agora">
+                <div class="Jogando_agora">
+                    <a class="link_img_jogo" href="game.html"  onclick="abrirgame('CODMW3')"><img src="imagens/Jogos img menor/calf of duty mw.jpg" alt=""></a>
+                    <a class="link_jogo" href="game.html"   onclick="abrirgame('CODMW3')">Calf Of Duty</a>
+                </div>
+
+                <div class="Jogando_agora">
+                    <a class="link_img_jogo" href="game.html" id="SNE4" onclick="abrirgame('SNE4')"><img src="imagens/Jogos img menor/sniper elite 4.jpg" alt=""></a>
+                    <a class="link_jogo" href="game.html" id="SNE4" onclick="abrirgame('SNE4')">Sniper Elite 4</a>
+                </div>
+
+                <div class="Jogando_agora">
+                    <a class="link_img_jogo" href="game.html"   onclick="abrirgame('FOH5')"><img src="imagens/Jogos img menor/forza horizon5.jpg" alt=""></a>
+                    <a class="link_jogo" href="game.html"   onclick="abrirgame('FOH5')">Forza Horizon 5</a>
+                </div>
+
+                <div class="Jogando_agora">
+                    <a class="link_img_jogo" href="game.html"   onclick="abrirgame('SNC2')"><img src="imagens/Jogos img menor/sniper contracts 2.jpg" alt=""></a>
+                    <a class="link_jogo"href="game.html"   onclick="abrirgame('SNC2')">Sniper Contracts 2</a>
+                </div>
+
+            
+            </div>
+
+        </section>
+
+        <section id="zerado">
+            <div class="divisao">
+                <div class="linha"></div>
+                <p>Zerados</p>
+                <div class="linha"></div>
+            </div>
+
+            <div class="Imagens_zerados">
+                <div class="Zerados">
+                    <a class="link_img_jogo" href="game.html" onclick="abrirgame('CODMW3')"><img src="imagens/Jogos img menor/calf of duty mw.jpg" alt=""></a>
+                    <a class="link_jogo" href="game.html" onclick="abrirgame('CODMW3')">Calf Of Duty</a>
+                </div>
+
+                <div class="Zerados">
+                    <a class="link_img_jogo" href="game.html"   onclick="abrirgame('NFSH')"><img src="imagens/Jogos img menor/nfs.jpg" alt=""></a>
+                    <a class="link_jogo" href="game.html"   onclick="abrirgame('NFSH')">N.F.S Heat</a>
+                </div>
+
+                <div class="Zerados">
+                    <a class="link_img_jogo" href="game.html"  onclick="abrirgame('SDIF')"><img src="imagens/Jogos img menor/six day in fallujah.jpg" alt=""></a>
+                    <a class="link_jogo" href="game.html"  onclick="abrirgame('SDIF')">Sixy Day In Fallujah</a>
+                </div>
+
+                <div class="Zerados">
+                    <a class="link_img_jogo" href="game.html" onclick="abrirgame('WART')"><img src="imagens/Jogos img menor/war thunder.jpg" alt=""></a>
+                    <a class="link_jogo" href="game.html" onclick="abrirgame('WART')">War Thunder</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="categorias">
+            <div class="divisao">
+                <div class="linha"></div>
+                <p>Categorias</p>
+                <div class="linha"></div>
+            </div>
+
+            <div class="Imagens_categoria">
+                <div class="Categoria">
+                    <a href="#"><img src="imagens/Categorias/adventure.png" alt=""></a>
+                    <a class="link_categoria" href="#">Aventura</a>
+                </div>
+
+                <div class="Categoria">
+                    <a href="#"><img src="imagens/Categorias/ação.png" alt=""></a>
+                    <a class="link_categoria"  href="#">Ação</a>
+                </div>
+
+                <div class="Categoria">
+                    <a href="#"><img src="imagens/Categorias/fighting_martial_arts.png" alt=""></a>
+                    <a class="link_categoria"  href="#">Luta</a>
+                </div>
+
+                <div class="Categoria">
+                    <a href="#"><img src="imagens/Categorias/rpg.png" alt=""></a>
+                    <a class="link_categoria"  href="#">R.P.G</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="nrecomendado">
+            <div class="divisao">
+                <div class="linha"></div>
+                <p>Não Recomendados</p>
+                <div class="linha"></div>
+            </div>
+
+            <div class="Imagens_nrecomendado">
+                <div class="Nao_recomendados">
+                    <a class="link_img_jogo" href="game.html"   onclick="abrirgame('DATD')"><img src="imagens/Jogos img menor/dave.jpg" alt=""></a>
+                    <a class="link_jogo" href="game.html"   onclick="abrirgame('DATD')">Dave the diver</a>
+                </div>
+
+                <div class="Nao_recomendados">
+                    <a class="link_img_jogo" href="game.html"   onclick="abrirgame('MTSA')"><img src="imagens/Jogos img menor/mytime.jpg" alt=""></a>
+                    <a class="link_jogo" href="game.html"   onclick="abrirgame('MTSA')">Sandrock</a>
+                </div>
+
+                <div class="Nao_recomendados">
+                    <a class="link_img_jogo" href="game.html"   onclick="abrirgame('SNOW')"><img src="imagens/Jogos img menor/snow runner.jpg" alt=""></a>
+                    <a class="link_jogo"  href="game.html"   onclick="abrirgame('SNOW')">Snow Runner</a>
+                </div>
+
+                <div class="Nao_recomendados">
+                    <a class="link_img_jogo"  href="game.html"   onclick="abrirgame('STDW')"><img src="imagens/Jogos img menor/stardewvalley.jpg" alt=""></a>
+                    <a class="link_jogo" href="game.html"   onclick="abrirgame('STDW')">Stardew Valley</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <section class="rodape">
+            <div class="logo">
+                <a href="#"><img src="imagens/Logotipo/logotipo header.png" alt=""></a>
+                <a href="#">Control_Games</a>
+            </div>
+            
+            <div class="links">
+                <a href="suporte.html"><img src="imagens/botoes/Customer Support.png" alt="suporte">Suporte</a>
+                <a href="#"><img src="imagens/botoes/Settings.png" alt="configurações">Configurações</a>
+            </div>
+        </section>
+    </footer>
+<script src="JS/game.js"></script>
+</body>
+
+</html>

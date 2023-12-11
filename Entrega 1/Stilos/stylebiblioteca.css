@@ -1,0 +1,387 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Salsa&display=swap');
+
+:root{
+    --cor0: #020416;
+    --cor1: #010A26;
+    --cor2: #0d9fff;
+    --cor3: #00484f;
+    --cor4: #1c004f;
+    --cor5: #ffffff;
+
+    --fonte-padrao: 'Poppins';
+    --fonte-destacamento: Tahoma ,sans-serif;
+    --fonte-titulo: 'Salsa';
+    --fonte-titulo2: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+/*Header-------------------------------------------------------------------------------*/
+
+header{
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
+    min-height: 100px;
+    padding-bottom: 10px;
+    background-color: var(--cor0);
+    
+}
+
+#logotipo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--fonte-titulo);
+    font-size: 1.6vw;
+    font-weight: 400;
+}
+
+#logotipo a{
+    text-decoration: none;
+    color: white;
+}
+
+#menu{
+    padding-left: 2vw;
+    font-family: var(--fonte-titulo2);
+    font-size: 1.5vw;
+}
+
+#menu nav  a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: white;
+    font-weight: 400;
+    padding: 5px 5px 5px 5px;
+    transition-duration: 0.8s;
+    
+    
+}
+
+#menu nav a:hover{
+    background-color: var(--cor2);
+    border-radius: 10px;
+}
+
+#pesquisa{
+    margin-left: 2vw;
+    padding: 10px;
+}
+
+
+#login{
+    display: block;
+    position: absolute;
+    right: 0;
+    color: white;
+    padding: 45px 25px 25px 25px;
+}
+
+#img_usuario{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+#usuario_font, #usuario_font2{
+        display: flex;
+        justify-content: center;
+        font-family: var(--fonte-padrao);
+}
+
+#usuario_font{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+/*Barra de pesquisar-------------------------------------------------------------------------------*/
+
+#pesquisa{
+    background-color: white;
+    height: 30px;
+    border-radius: 50px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#busca-text{
+    background: none; /*AQUI FAÇO A RETIRADA DAS CONFIGURÇÃOES PADRÃO DO BOX INPUT*/
+    border: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 1em;
+    width: 0;
+    transition: 0.5s;
+}
+
+#botao-pesquisar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#pesquisa:hover > #busca-text{
+    width: 180px;
+}
+
+#pesquisa:hover > #botao-pesquisar{
+    background-color: #447ce7;         /*Aqui eu falo que quando o mouse passar o mouse em cima da barra de pesquisa o background vai ficar igual a cor da lupa , preparando o terreno para alupa branca */
+}
+
+#pesquisa:hover > #botao-pesquisar #lupa-azul{
+    display: none;                         /*Aqui eu desligo a lupa azul quando o hover acontece preparanod o terreno para lupa branca*/
+}
+
+#pesquisa:hover > #botao-pesquisar #lupa-branca{
+    display: block;                        /*Agora a lupa branca pode aparecer pois o background está feito e a lupa azul foi "desligada"*/
+}
+
+#lupa-branca{
+    display: none;
+}
+/*Termino da barra de pesquisa---------------------------------------------------------------------------------------------------------------------*/
+
+/*Main (corpo)-------------------------------------------------------------------------------------------------------------------------------------*/
+
+main{
+    min-width: 300px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/*divisão das Secções----------------------------------------------------------------------------------------------------------------------------*/
+
+.divisao{
+    display: flex;
+    align-items: center;
+    margin: 35px 0;
+
+    font-family: var(--fonte-titulo2);
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.divisao p{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.linha{
+    flex: 1;
+    border-top: 1px solid white;
+    height: 0;
+    margin: 0 5px;
+}
+
+/*Jogos----------------------------------------------------------------------------------------------------------------------------*/
+
+.Jogos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; /* Define o espaçamento entre as imagens */
+}
+
+.Jogos img {
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    transition-duration: 0.8s;
+}
+
+.link_jogo{ /*Configuração global para todas as sections em relação ao link tanto da img e do texto que foi desativada a função :hover  peguei do style primmiero pronto*/
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    font-weight: 600;
+    color: white;
+    font-size: 16px;
+    transition-duration: 0.8s;
+    padding: 5px;
+}
+
+.link_img_jogo img:hover{
+    transform: scale(1.1);
+}
+
+
+/*Botões----------------------------------------------------------------------------------------------------------------------*/
+
+#botao_cadastrar_jogo{
+    display: flex;
+    width: 180px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid black;
+    font-family: var(--fonte-padrao);
+    background-image: linear-gradient(to right ,#FF7A00 4.24% , #FFB800 79.05% , #FF7A00 100%);
+    transition: 0.8s;
+    margin-top: 50px;
+    margin-bottom: 20px; 
+}
+
+#botao_cadastrar_jogo a{
+    text-decoration: none;
+
+}
+
+#botao_cadastrar_jogo:hover{
+    transform: scale(1.2);
+}
+
+
+
+/*Footer----------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+    background-color: var(--cor0);
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo a{
+    color: white;
+    font-family: var(--fonte-titulo);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.links a{
+    display: flex;
+    align-items: center;
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 10px ;
+    margin-right: 20px;
+    transition-duration: 0.8s;
+}
+
+.links a:hover{
+    transform: scale(1.2);
+}
+
+/*Media queries ----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media(max-width: 900px){
+    /* Seção Não Recomendados para dispositivos menores que 600px */
+
+    /*Configurações globais fonte -----------------*/
+    .link_jogo {
+        font-size: 14px; /* Tamanho da fonte reduzido */
+    }
+    .link_categoria {
+        font-size: 14px; /* Tamanho da fonte reduzido */
+    }
+    .links a{
+        font-size: 0em;
+    } 
+    #logotipo a{
+        font-size: 0em;
+    }
+
+    /*Menu----------------------------------------------------------------*/
+
+    /*Logotipo---------------*/
+    #logotipo {
+        font-size: 1.2em;
+    }
+    
+    #logotipo img{
+        width: 90px;
+    }
+
+    /*Menu Navegação-----------------------------*/
+
+    #menu{
+        font-size: 1em;
+        margin: auto;
+    }
+
+    #menu nav a {
+        font-size: 1em;
+        padding: 5px;
+        
+    }
+
+    /*Parte de login do usuario-------------------*/
+    #login {
+        padding: 20px;
+    }
+    
+    #img_usuario {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #usuario_font {
+        font-size: 0em;
+    }
+    
+    #usuario_font2 {
+        font-size: 0em;
+    }
+
+
+    /*Barra pesquisa--------------------------------------*/
+    #pesquisa {
+        visibility: hidden;
+    }
+    
+    #busca-text {
+        visibility: hidden;
+    }
+    
+    #botao-pesquisar {
+        visibility: hidden;
+    }
+
+
+    /*jogos---------------------------------------------------*/
+    
+    .Jogos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px; /* Define o espaçamento entre as imagens */
+    }
+}

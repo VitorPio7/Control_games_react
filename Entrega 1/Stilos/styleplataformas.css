@@ -1,0 +1,417 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Salsa&display=swap');
+
+:root{
+    --cor0: #020416;
+    --cor1: #010A26;
+    --cor2: #0d9fff;
+    --cor3: #00484f;
+    --cor4: #1c004f;
+    --cor5: #ffffff;
+
+    --fonte-padrao: 'Poppins';
+    --fonte-destacamento: Tahoma ,sans-serif;
+    --fonte-titulo: 'Salsa';
+    --fonte-titulo2: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /* background-color: var(--cor1); */
+    background-image: linear-gradient(to bottom ,#023E62 48.62%, #010A26 96.01%  , #024872 100% );;
+
+}
+
+/*Header-------------------------------------------------------------------------------*/
+
+header{
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
+    min-height: 100px;
+    padding-bottom: 10px;
+    background-color: var(--cor0);
+    
+}
+
+#logotipo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--fonte-titulo);
+    font-size: 1.6vw;
+    font-weight: 400;
+}
+
+#logotipo a{
+    text-decoration: none;
+    color: white;
+}
+
+#menu{
+    padding-left: 2vw;
+    font-family: var(--fonte-titulo2);
+    font-size: 1.5vw;
+}
+
+#menu nav  a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: white;
+    font-weight: 400;
+    padding: 5px 5px 5px 5px;
+    transition-duration: 0.8s;
+    
+    
+}
+
+#menu nav a:hover{
+    background-color: var(--cor2);
+    border-radius: 10px;
+}
+
+#pesquisa{
+    margin-left: 2vw;
+    padding: 10px;
+}
+
+
+#login{
+    display: block;
+    position: absolute;
+    right: 0;
+    color: white;
+    padding: 45px 25px 25px 25px;
+}
+
+#img_usuario{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+#usuario_font, #usuario_font2{
+        display: flex;
+        justify-content: center;
+        font-family: var(--fonte-padrao);
+}
+
+#usuario_font{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+/*Barra de pesquisar-------------------------------------------------------------------------------*/
+
+#pesquisa{
+    background-color: white;
+    height: 30px;
+    border-radius: 50px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#busca-text{
+    background: none; /*AQUI FAÇO A RETIRADA DAS CONFIGURÇÃOES PADRÃO DO BOX INPUT*/
+    border: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 1em;
+    width: 0;
+    transition: 0.5s;
+}
+
+#botao-pesquisar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#pesquisa:hover > #busca-text{
+    width: 180px;
+}
+
+#pesquisa:hover > #botao-pesquisar{
+    background-color: #447ce7;         /*Aqui eu falo que quando o mouse passar o mouse em cima da barra de pesquisa o background vai ficar igual a cor da lupa , preparando o terreno para alupa branca */
+}
+
+#pesquisa:hover > #botao-pesquisar #lupa-azul{
+    display: none;                         /*Aqui eu desligo a lupa azul quando o hover acontece preparanod o terreno para lupa branca*/
+}
+
+#pesquisa:hover > #botao-pesquisar #lupa-branca{
+    display: block;                        /*Agora a lupa branca pode aparecer pois o background está feito e a lupa azul foi "desligada"*/
+}
+
+#lupa-branca{
+    display: none;
+}
+/*Termino da barra de pesquisa---------------------------------------------------------------------------------------------------------------------*/
+
+/*Main (corpo)-------------------------------------------------------------------------------------------------------------------------------------*/
+
+main{
+    max-width: 1000px;
+    height: 100vh;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    
+}
+/*divisão das Secções----------------------------------------------------------------------------------------------------------------------------*/
+
+.divisao{
+    display: flex;
+    align-items: center;
+    margin: 35px 0;
+
+    font-family: var(--fonte-titulo2);
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.divisao p{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.linha{
+    flex: 1;
+    border-top: 1px solid white;
+    height: 0;
+    margin: 0 5px; 
+    
+}
+
+/*secção lista plataformas-------------------------------------------------------------------------------------------------------------------------------------*/
+
+#Plataformas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Mostrar_plataformas {
+    margin-bottom: 10px; /* Adicione espaço entre os blocos */
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 250px;
+}
+
+.link_img_plataforma {
+    margin-right: 30px; /* Adicione espaço entre a imagem e a descrição */
+}
+
+.link_plataforma {
+    display: block; /* Faz com que o link ocupe toda a largura disponível */
+}
+
+.link_img_plataforma img{
+    width: 80px;
+    transition-duration: 0.8s;
+}
+
+.Mostrar_plataformas a{
+    color: white;
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+}
+
+
+.link_img_plataforma img:hover{
+    transform: scale(1.2);
+}
+
+/*Botões----------------------------------------------------------------------------------------------------------------------*/
+
+#botoes{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+#botoes a{
+    align-items: center;
+    width: 170px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid black;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-decoration: none;
+    background-image: linear-gradient(to right ,#44a3e3 4.24% , #4471E3 79.05% , #4944E3 100%);
+    transition: 0.8s;
+}
+
+#botoes #botao_remover{
+    background-image: linear-gradient(to right ,#E61717 4.24% , #B33636 79.05% , #804040 100%); 
+}
+
+#botoes a:hover{
+    transform: scale(1.2);
+}
+
+/*Footer----------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+    background-color: var(--cor0);
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo a{
+    color: white;
+    font-family: var(--fonte-titulo);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.links a{
+    display: flex;
+    align-items: center;
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 10px ;
+    margin-right: 20px;
+    transition-duration: 0.8s;
+}
+
+.links a:hover{
+    transform: scale(1.2);
+}
+
+/*Media queries ----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media(max-width: 900px){
+    /* Seção Não Recomendados para dispositivos menores que 600px */
+
+    /*Configurações globais fonte -----------------*/
+    .link_jogo {
+        font-size: 14px; /* Tamanho da fonte reduzido */
+    }
+    .link_categoria {
+        font-size: 14px; /* Tamanho da fonte reduzido */
+    }
+    .links a{
+        font-size: 0em;
+    } 
+    #logotipo a{
+        font-size: 0em;
+    }
+
+    /*Menu----------------------------------------------------------------*/
+
+    /*Logotipo---------------*/
+    #logotipo {
+        font-size: 1.2em;
+    }
+    
+    #logotipo img{
+        width: 90px;
+    }
+
+    /*Menu Navegação-----------------------------*/
+
+    #menu{
+        font-size: 1em;
+        margin: auto;
+    }
+
+    #menu nav a {
+        font-size: 1em;
+        padding: 5px;
+        
+    }
+
+    /*Parte de login do usuario-------------------*/
+    #login {
+        padding: 20px;
+    }
+    
+    #img_usuario {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #usuario_font {
+        font-size: 0em;
+    }
+    
+    #usuario_font2 {
+        font-size: 0em;
+    }
+
+    /*Barra pesquisa--------------------------------------*/
+    #pesquisa {
+        visibility: hidden;
+    }
+    
+    #busca-text {
+        visibility: hidden;
+    }
+    
+    #botao-pesquisar {
+        visibility: hidden;
+    }
+
+    /*Botões----------------------------------------------------------------------------------------------------------------------*/
+
+    #botoes{
+        padding-top: 100px;
+    }
+
+    #botoes a{
+        align-items: center;
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #botoes #botao_remover{
+        background-image: linear-gradient(to right ,#E61717 4.24% , #B33636 79.05% , #804040 100%); 
+    }
+
+    #botoes a:hover{
+        transform: scale(1.2);
+    }
+
+
+}

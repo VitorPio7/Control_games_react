@@ -1,0 +1,354 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Salsa&display=swap');
+
+:root{
+    --cor0: #020416;
+    --cor1: #010A26;
+    --cor2: #0d9fff;
+    --cor3: #00484f;
+    --cor4: #1c004f;
+    --cor5: #ffffff;
+
+    --fonte-padrao: 'Poppins';
+    --fonte-destacamento: Tahoma ,sans-serif;
+    --fonte-titulo: 'Salsa';
+    --fonte-titulo2: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../imagens/fundos/Rectangle\ 2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+/*Header-------------------------------------------------------------------------------*/
+
+header{
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
+    min-height: 100px;
+    padding-bottom: 10px;
+    background-color: var(--cor0);
+    
+}
+
+#logotipo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--fonte-titulo);
+    font-size: 1.6em;
+    font-weight: 400;
+}
+
+#logotipo a{
+    text-decoration: none;
+    color: white;
+}
+
+#menu{
+    padding-left: 4vw;
+    font-family: var(--fonte-titulo2);
+    font-size: 1.5em;
+}
+
+#menu nav  a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: white;
+    font-weight: 400;
+    padding: 5px 5px 5px 5px;
+    transition-duration: 0.8s;
+    
+    
+}
+
+#menu nav a:hover{
+    background-color: var(--cor2);
+    border-radius: 10px;
+}
+
+#pesquisa{
+    margin-left: 4vw;
+}
+
+
+
+/*Main---------------------------------------------------------------------------------------------------------------------*/
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Conteiner do Login---------------------------------------------------------------------------------------------------------------------*/
+
+/*divisão login---------------------------------------------------------------*/
+
+.divisao {
+    text-align: center; /* Centraliza o conteúdo */
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  
+  .divisao p {
+    font-size: 24px; /* Tamanho da fonte para o texto "Login" */
+    margin-bottom: 10px; /* Espaço entre o texto e a linha */
+    font-family: var(--fonte-padrao);
+    font-size: 20px;
+    color: white;
+  }
+  
+  .divisao .linha {
+    width: 300px; /* Largura da linha (ajuste conforme necessário) */
+    height: 2px; /* Altura da linha */
+    background-color: white; /* Cor da linha, você pode alterar para a cor desejada */
+    margin: 0 auto; /* Centraliza a linha horizontalmente */
+    
+  }
+  
+
+/*Conteiner da secção login---------------------------------------------------------------------------------*/
+.container{
+    width: 500px;
+    height: 580px;
+    margin: auto;
+    background-color: var(--cor1);
+    border-radius: 20px;
+}
+
+#box_nickname{
+    display: inline-block;
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 20px;
+}
+
+#box_nickname p{
+    text-align: left;
+}
+
+#box_nickname input{
+    width: 421px;
+    height:40px ;
+    border-radius: 10px
+}
+
+#box_email{
+    display: inline-block;
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 20px;
+}
+
+#box_email p{
+    text-align: left;
+}
+
+#box_email input{
+    width: 421px;
+    height:40px ;
+    border-radius: 10px
+    
+}
+
+#box_senha{
+    display: inline-block;
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 20px;
+}
+
+#box_senha p{
+    text-align: left;
+}
+
+#box_senha input{
+    width: 421px;
+    height:40px ;
+    border-radius: 10px
+}
+
+
+#box_repetir_senha{
+    display: inline-block;
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    
+}
+
+#box_repetir_senha p{
+    text-align: left;
+}
+
+#box_repetir_senha input{
+    width: 421px;
+    height:40px ;
+    border-radius: 10px
+}
+
+
+#box_cadastro{
+    text-align: center;
+    padding-top: 30px;
+}
+
+#box_cadastro button{
+    display: block;
+    margin: auto;
+    width: 284px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--cor2);
+
+    margin-bottom: 20px;
+    transition-duration: 0.8s;
+}
+
+
+#box_cadastro button:hover{
+    transform: scale(1.1);
+}
+
+#box_login a{
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 16px;
+    transition-duration: 0.8s;
+}
+
+#box_login a:hover{
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/*Footer----------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+    background-color: var(--cor0);
+    padding-bottom: 15px;
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo a{
+    color: white;
+    font-family: var(--fonte-titulo);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.links a{
+    display: flex;
+    align-items: center;
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 10px ;
+    margin-right: 30px;
+    transition-duration: 0.8s;
+}
+
+.links a:hover{
+    transform: scale(1.2);
+}
+
+/*Media queries ----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media(max-width: 900px){
+    /* Seção Não Recomendados para dispositivos menores que 600px */
+
+    #logotipo a{
+        font-size: 0em;
+    }
+
+    .logo , .links a{
+        font-size: 0;
+    }
+
+    #menu{
+        font-size: 18px;
+    }
+
+    .container{
+        width: 350px;
+        height: 650px;
+        margin: auto;
+        background-color: var(--cor1);
+        border-radius: 20px;
+    }
+
+    #box_nickname input{
+        width: 320px;
+        height:40px ;
+        border-radius: 10px
+        
+    }
+
+    #box_email input{
+        width: 320px;
+        height:40px ;
+        border-radius: 10px
+        
+    }
+
+    #box_senha input{
+        width: 320px;
+        height:40px ;
+        border-radius: 10px
+        
+    }
+
+    #box_repetir_senha input{
+        width: 320px;
+        height:40px ;
+        border-radius: 10px
+        
+    }
+}

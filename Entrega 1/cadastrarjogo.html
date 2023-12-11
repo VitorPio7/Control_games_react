@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Games</title>
+    <link rel="stylesheet" href="Stilos/stylecadastrajogo.css">
+    <script src="JS/game.js"></script>
+</head>
+<body>
+
+    <header>
+        <section id="logotipo">
+            <a href="index.html"><img src="imagens/Logotipo/logotipo header.png" alt="logotipo"></a>
+            <a href="index.html">Control_Games</a>
+        </section>
+
+        <section id="menu">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="biblioteca.html">Biblioteca</a>
+                <a href="plataformas.html">Plataformas</a>
+            </nav>
+        </section>
+
+        <section id="pesquisa">
+            <input type="text" id="busca-text" placeholder="Pesquisar...">
+            <a id="botao-pesquisar">
+                <img id="lupa-azul" src="imagens/botoes/loupe-blue.svg" alt="" width="25px" height="25px">
+                <img id="lupa-branca" src="imagens/botoes/loupe-white.svg" alt="" width="25px" height="25px">
+                <!--Configurei o tamnho da lupa-->
+            </a>
+
+        </section>
+
+        <section id="login">
+            <img id="img_usuario" src="imagens/avatar/WhatsApp Image 2023-11-02 at 18.29.34 (2).jpeg" alt="usuario">
+            <p id="usuario_font">Adailton Cerqueira</p>
+            <p id="usuario_font2">Mestre<img id="img_classe" src="imagens/avatar/Medal First Place.png" alt=""></p>
+            
+        </section>
+    </header>
+
+    <main>
+        <section class="container">
+
+            <div class="divisao">
+                <p>Cadastrar Jogo</p>
+                <div class="linha"></div>
+            </div>
+
+            <article id="formGame">
+
+                <div id="box_id">
+                    <p>ID do Jogo</p>
+                    <input type="text" id="id_input">
+                </div>
+
+                <div id="box_nome">
+                    <p>Nome do Jogo</p>
+                    <input type="text" id="nome_input">
+                </div>
+
+                <div id="box_nome">
+                    <p>URL da capa do Jogo</p>
+                    <input type="text" id="capa_input">
+                </div>
+
+                <div id="box_plataforma">
+                    <p>Plataforma</p>
+                    <select id="plataformas_input" name="plataformas">
+                        <option value="PC">PC</option>
+                        <option value="Xbox">Xbox</option>
+                        <option value="Play Store">Play Store</option>
+                        <option value="PlayStation">PSN</option>
+                        <option value="steam">Steam</option>
+                        <option value="epicgames">Epic Games</option>
+                    </select>
+                </div>
+
+                <div id="box_status">
+                    <p>Status</p>
+                    <select id="status_input" name="status">
+                        <option value="Jogando">Jogando</option>
+                        <option value="Jogado">Zerado</option>
+                        <option value="Zerado">Nunca jogado</option>
+                    </select>
+                </div>
+ 
+                <div id="box_categoria">
+                    <p>Categoria do jogo</p>
+                    <select id="categoria_input" name="categoria">
+                        <option value="rpg">RPG</option>
+                        <option value="acao">Ação</option>
+                        <option value="simulador">Simulador</option>
+                        <option value="fps">FPS</option>
+                        <option value="terror">Terror</option>
+                        <option value="estratégia">Estratégia</option>
+                        <option value="cooperativo">Cooperativo</option>
+                        <option value="casual">Casual</option>
+                        <option value="mundo aberto">Mundo Aberto</option>
+                    </select>
+                </div>
+
+                <div id="box_progresso">
+                    <p>Progresso do jogo</p>
+                    <input type="text" id="progresso_input">
+                </div>
+                
+                <div id="box_recomendo">
+                    <p>Recomendo o Jogo</p>
+                    <select id="recomendo_input" name="recomendacao">
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                        <option value="em avaliacao">Em avaliação</option>
+                    </select>
+                </div>
+
+                <div id="box_ano_lancamento">
+                    <p>Ano de Lançamento</p>
+                    <input type="date" id="ano_input">
+                </div>
+
+                <div id="box_versao">
+                    <p>Versão do Jogo</p>
+                    <select id="versao_input" name="versao">
+                        <option value="Fisica">Fisica</option>
+                        <option value="Digital">Digital</option>
+                    </select>
+                </div>
+
+                <div id="box_descricao">
+                    <p>Descrição do Jogo</p>
+                    <textarea name="descricao" id="descricao_input" cols="55" rows="13"></textarea>
+                </div>
+
+            </article>
+
+        </section>
+
+        <section id="botao_cadastrar_jogo">
+            <a href="" onclick="adicionarGame()">Cadastrar Novo Jogo</a>
+        </section>
+
+        <script>
+            // Obtenha a referência ao contêiner de jogos e formulário
+            const gamesContainer = document.getElementById('games');
+            const formGame = document.getElementById('formGame');
+
+            // Inicializar a lista de jogos quando a página carregar
+            // atualizarListaGames();
+        </script>
+
+    </main>
+
+    <footer>
+        <section class="rodape">
+            <div class="logo">
+                <a href="#"><img src="imagens/Logotipo/logotipo header.png" alt=""></a>
+                <a href="#">Control_Games</a>
+            </div>
+            
+            <div class="links">
+                <a href="suportelogincadastro.html"><img src="imagens/botoes/Customer Support.png" alt="suporte">Suporte</a>
+                <a href="#"><img src="imagens/botoes/Settings.png" alt="configurações">Configurações</a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

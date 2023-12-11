@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stilos/stylegames.css">
+    <title>Control Games</title>
+    <script src="https://kit.fontawesome.com/994a8be22c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <section id="logotipo">
+            <a href="index.html"><img src="imagens/Logotipo/logotipo header.png" alt="logotipo"></a>
+            <a href="index.html">Control_Games</a>
+        </section>
+
+        <section id="menu">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="biblioteca.html">Biblioteca</a>
+                <a href="plataformas.html">Plataformas</a>
+            </nav>
+        </section>
+
+        <section id="pesquisa">
+            <input type="text" id="busca-text" placeholder="Pesquisar...">
+            <a id="botao-pesquisar">
+                <img id="lupa-azul" src="imagens/botoes/loupe-blue.svg" alt="" width="25px" height="25px">
+                <img id="lupa-branca" src="imagens/botoes/loupe-white.svg" alt="" width="25px" height="25px">
+                
+            </a>
+
+        </section>
+
+        <section id="login">
+            <img id="img_usuario" src="imagens/avatar/WhatsApp Image 2023-11-02 at 18.29.34 (2).jpeg" alt="usuario">
+            <p id="usuario_font">Adailton Cerqueira</p>
+            <p id="usuario_font2">Mestre<img id="img_classe" src="imagens/avatar/Medal First Place.png" alt=""></p>
+            
+        </section>
+
+    </header>
+    <main>
+        <section>
+            <div class="divisao">
+                <div class="linha"></div>
+                <p id="gameid"></p>
+                <div class="linha"></div>
+            </div>
+
+                <div id="foto_box"><span id="fotoid"></span></div>
+
+            <article class="info">
+                <ul>
+                    <li>Plataforma : <p id="plataformaid"></p> <span id="plataformaokid"></span></li>
+                    <li>Status : <p id="statusid"></p></li>
+                    <li>Categoria : <p id="categoriaid"></p></li>
+                    <li>Progresso : <p id="progressoid"></p></li>
+                    <li>Recomendo : <p id="recomendoid"></p></li>
+                    <li>Ano de Lançamento : <p id="anoid"></p></li>
+                    <li>Versão : <p id="versaoid"></p></li>
+                </ul>
+
+                <aside id="box_descricao">
+                    <h2>Descrição</h2>
+                    <p id="descricaoid"></p>
+                </aside>
+            </article>
+        </section>
+
+        <section id="botoes">
+            <a id="botao_editar" href="" onclick="confirmacao(2)">Editar Jogo</a>
+            <a id="botao_remover" href="" onclick="confirmacao(1)">Remover Jogo</a>
+        </section>
+
+    </main>
+    <footer>
+        <section class="rodape">
+            <div class="logo">
+                <a href="#"><img src="imagens/Logotipo/logotipo header.png" alt=""></a>
+                <a href="#">Control_Games</a>
+            </div>
+            
+            <div class="links">
+                <a href="suporte.html"><img src="imagens/botoes/Customer Support.png" alt="suporte">Suporte</a>
+                <a href="#"><img src="imagens/botoes/Settings.png" alt="configurações">Configurações</a>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+        //AQUI ESTOU FAZENDO O CRUD DO JOGO ONDE TODOS OS DADOS ESTAO EM game.js
+        document.getElementById("gameid").innerHTML = localStorage.getItem("gameid",gameid);
+        document.getElementById("plataformaid").innerHTML = localStorage.getItem("plataformaid");
+        document.getElementById("statusid").innerHTML = localStorage.getItem("statusid");
+        document.getElementById("categoriaid").innerHTML = localStorage.getItem("categoriaid");
+        document.getElementById("progressoid").innerHTML = localStorage.getItem("progressoid");
+        document.getElementById("recomendoid").innerHTML = localStorage.getItem("recomendoid");
+        document.getElementById("anoid").innerHTML = localStorage.getItem("anoid");
+        document.getElementById("versaoid").innerHTML = localStorage.getItem("versao");
+        document.getElementById("descricaoid").innerHTML = localStorage.getItem("descricaoid");
+
+        localStorage.getItem('fotoid', fotoid);
+        document.getElementById("fotoid").innerHTML = localStorage.getItem("fotoid");
+        document.getElementById("fotoid").innerHTML = '<span>' + txt + '</span>' + fotoid; 
+
+    </script>
+
+    <script>
+        // script para aparecer a logo da plataforma 
+        localStorage.getItem('plataformaokid', plataformaokid);
+        document.getElementById("plataformaokid").innerHTML = localStorage.getItem("plataformaokid");
+        document.getElementById("plataformaokid").innerHTML = '<span>' + txt + '</span>' + plataformaokid;
+    </script>
+
+    <script src="JS/game.js"></script>
+</body>
+</html>
