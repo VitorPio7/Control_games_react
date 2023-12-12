@@ -23,7 +23,6 @@ export function Form_login() {
         } catch (error) {
             alert(`Erro ao fazer login: Usuario ou Senha incorretos`);
             setSenha('');
-
         }
     };
 

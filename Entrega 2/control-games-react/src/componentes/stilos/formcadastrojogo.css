@@ -47,11 +47,11 @@ background-color: white; /* Cor da linha, você pode alterar para a cor desejada
 margin: 0 auto; /* Centraliza a linha horizontalmente */
 }
 
-/*Conteiner da secção cadastro---------------------------------------------------------------------------------*/
+/*Conteiner da secção cadastro-----------------------------------------------------------------------------------------------------*/
 
 #containercadastrarjogo{
     width: 530px;
-    height: 1020px;
+    height: 1090px;
     margin: auto;
     background-color: var(--cor1);
     border-radius: 20px;
@@ -122,6 +122,12 @@ margin: 0 auto; /* Centraliza a linha horizontalmente */
     padding-top: 10px;
 }
 
+/*Botão adicionar categoria----------------------------------------------------------------------------------*/
+
+#botao_adicionar_categoria{
+    padding-top: 10px;
+}
+
 /*Container atualizar Jogo----------------------------------------------------------------------------------*/
 
 #containeratualizajogo select,input{
@@ -149,7 +155,7 @@ margin: 0 auto; /* Centraliza a linha horizontalmente */
 
     #containercadastrarjogo{
         width: 330px;
-        height: 1020px;
+        height: 1100px;
         background-color: var(--cor1);
         border-radius: 20px;
     }

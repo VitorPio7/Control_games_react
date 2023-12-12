@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import { LocalServerUrl } from "../configuracao/LocalServer";
 import axios from "axios";
-
 import Paginahome from "./paginahome"
 import Paginabiblioteca from "./paginabiblioteca";
 import Paginaplataformas from "./paginaplataformas";

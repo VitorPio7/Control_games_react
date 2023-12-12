@@ -179,6 +179,10 @@ function Form_cadastrojogo() {
                 <div id='botao_adicionar_jogo'>
                     <button id="botao-cadastrar-jogo" onClick={CriarJogo}>Adicionar na Biblioteca</button>
                 </div>
+
+                <div id='botao_adicionar_categoria'>
+                    <button id="botao-adicionar-categoria" onClick={CriarJogo}>Adicionar Categoria</button>
+                </div>
             </div>
 
 
