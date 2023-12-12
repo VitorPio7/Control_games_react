@@ -58,7 +58,7 @@ function Form_cadastrojogo() {
             setRecomendo('');
             setAno('');
             setDescricao('');
-            window.location.href='/biblioteca'
+            window.location.href = '/biblioteca'
 
 
 
@@ -141,7 +141,7 @@ function Form_cadastrojogo() {
                 <div id="box_categoriacadastrarjogo">
                     <p>Categoria do Jogo</p>
                     <select id="categoria_inputcadastrarjogo" name="categoria" value={categoria} onChange={(e) => setCategoria(e.target.value)}>
-                    <option value=''>Selecione uma Categoria</option>
+                        <option value=''>Selecione uma Categoria</option>
                         {categorias.map((categoria) => (
                             <option key={categoria.nomeCategoria} value={categoria.nomeCategoria}>
                                 {categoria.nomeCategoria}
@@ -149,7 +149,7 @@ function Form_cadastrojogo() {
                         ))}
                     </select>
                 </div>
-                
+
 
                 <div id="box_progressocadastrarjogo">
                     <p>Progresso do jogo</p>
@@ -181,7 +181,9 @@ function Form_cadastrojogo() {
                 </div>
 
                 <div id='botao_adicionar_categoria'>
-                    <button id="botao-adicionar-categoria" onClick={CriarJogo}>Adicionar Categoria</button>
+                    <Link to='/cadastrocategoria'>
+                        <button id="botao-adicionar-categoria">Adicionar/Remover Categoria</button>
+                    </Link>
                 </div>
             </div>
 

@@ -73,7 +73,6 @@ const Rotas = () => {
                         </Routes>
                     ))
             }
-
         </Router>
     )
 }
