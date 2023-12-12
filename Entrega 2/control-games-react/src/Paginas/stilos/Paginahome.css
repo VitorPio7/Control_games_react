@@ -7,6 +7,11 @@
     --cor5: #ffffff;
 }
 
+.retorno0{
+    color: white;
+    font-family: var(--fonte-padrao);
+}
+
 #bodyhome{
     background-color: var(--cor1);
 }

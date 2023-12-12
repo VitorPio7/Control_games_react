@@ -1,5 +1,5 @@
 // atualizar ip do servidor local
-const ip = '192.168.0.150'
+const ip = '177.193.220.69'
 // atualizar port do servidor, mesma porta do Server.js 
 const port = 3002
 
